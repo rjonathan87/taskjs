@@ -14,3 +14,15 @@ async function fetchWeather(){
 }
 
 document.addEventListener('DOMContentLoaded', fetchWeather);
+
+document.getElementById('w-change-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    let city = document.getElementById('city').value;
+    let countryCode = document.getElementById('countryCode').value;
+
+    weather.changeLocation(city, countryCode);
+    fetchWeather();
+
+    console.log(city, countryCode);
+    
+});
