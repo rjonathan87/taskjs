@@ -16,6 +16,6 @@ export class Weather{
 
     changeLocation(city, countryCode){
         this.city = city;
-        this.countryCode = countryCode;
+        this.countryCode = countryCode; 
     }
 }

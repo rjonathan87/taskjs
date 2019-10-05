@@ -21,7 +21,7 @@ document.getElementById('w-change-btn').addEventListener('click', (e) => {
     let countryCode = document.getElementById('countryCode').value;
 
     weather.changeLocation(city, countryCode);
-    fetchWeather();
+    fetchWeather(); 
 
     console.log(city, countryCode);
     
